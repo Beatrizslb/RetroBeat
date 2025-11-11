@@ -1,4 +1,4 @@
-# RetroBeat
+# 💽RetroBeat
 
 **Descrição**
 
@@ -7,7 +7,7 @@ A página de administrador terá login de acesso restrito, permitindo que apenas
 
 ---
 
-## Tecnologias utilizadas
+## 🧱 Tecnologias utilizadas
 
 | Tecnologia     | Descrição                                                        |
 | -------------- | ---------------------------------------------------------------- |
@@ -22,7 +22,7 @@ A página de administrador terá login de acesso restrito, permitindo que apenas
 
 ---
 
-## Integrantes
+## 🎓 Colaboradores
 
 * Ana Beatriz Linhares
 * Daniel de Lima
