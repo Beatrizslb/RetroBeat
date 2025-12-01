@@ -6,7 +6,6 @@ session_start(); ?>
     <meta charset="utf-8">
     <title>Login - Administrador</title>
 
-    <!-- Importando a fonte Poppins -->
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
 
     <style>
@@ -85,11 +84,6 @@ session_start(); ?>
         font-weight: 500;
     }
 
-    /* =========================== */
-    /*        RESPONSIVO           */
-    /* =========================== */
-
-    /* TELEFONE PEQUENO (até 480px) */
     @media (max-width: 480px) {
         .formulario {
             width: 100%;
@@ -110,7 +104,6 @@ session_start(); ?>
         .btn { font-size: 17px; }
     }
 
-    /* TABLET HORIZONTAL / TELAS MÉDIAS (769–1024px) */
     @media (min-width: 769px) and (max-width: 1024px) {
         .formulario {
             width: 450px;
