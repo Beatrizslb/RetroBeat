@@ -3,7 +3,7 @@
 
     <p>
         A <strong>RetroVibe Discos</strong> é uma loja especializada em vinis retrô,
-        fundada em 2022 na charmosa região do <strong>Manaíra, em João Pessoa – PB</strong>.
+        fundada em 2025 na charmosa região de <strong>Manaíra, em João Pessoa – PB</strong>.
         Criamos este espaço para conectar colecionadores, apaixonados por música e todos que
         apreciam a estética única dos discos de vinil.
     </p>
