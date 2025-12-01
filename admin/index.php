@@ -5,8 +5,62 @@ include 'auth.php';
 <html lang="pt-br">
 <head>
 <meta charset="utf-8">
-<meta charset="utf-8">
 <title>Painel Administrativo</title>
+
+<style>
+    /* Cor de fundo geral */
+    body {
+        background-color: #f1e9deff;
+        margin: 0;
+        font-family: Arial, sans-serif;
+    }
+
+    /* Header — mesma cor dos gráficos (#8C6B42) */
+    header {
+        background: #8C6B42;
+        padding: 5px;
+        text-align: center;
+        color: white;
+        font-weight: bold;
+    }
+
+    /* NAV — um pouco mais escuro que o fundo */
+    nav {
+        background: #D1BA9A; /* tom mais escuro que #E5D0B1 */
+        padding: 12px;
+        display: flex;
+        gap: 20px;
+        justify-content: center;
+        box-shadow: 0 2px 5px rgba(0,0,0,0.15);
+    }
+
+    nav a {
+        color: #5A4730;
+        font-weight: bold;
+        text-decoration: none;
+        padding: 6px 12px;
+        border-radius: 6px;
+        transition: 0.2s;
+    }
+
+    nav a:hover {
+        background: #C4AA87;
+    }
+
+    .logout {
+        color: white;
+        background: #971414ff;
+    }
+
+    .logout:hover {
+        background: #b21e1eff;
+    }
+
+    main {
+        padding: 30px;
+    }
+</style>
+
 </head>
 <body>
 
@@ -23,7 +77,7 @@ include 'auth.php';
 <main>
     <?php
         if (empty($_GET['pg'])) {
-        $pg = 'dashboard'; 
+            $pg = 'dashboard'; 
         } else {
             $pg = str_replace('.php', '', $_GET['pg']);
         }
@@ -37,5 +91,6 @@ include 'auth.php';
         }
     ?>
 </main>
+
 </body>
 </html>
