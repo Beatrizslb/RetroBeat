@@ -1,3 +1,9 @@
+<head>
+    <meta charset="UTF-8">
+    <title>Retrobeat</title>
+    <link rel="stylesheet" href="retrobeat.css">
+</head>
+
 <section class="sobre">
     <h1>Bem-vindo à RetroVibe Discos</h1>
     <p>
@@ -14,3 +20,4 @@
 
     <p>Explore nossas categorias e encontre o disco perfeito para você!</p>
 </section>
+
