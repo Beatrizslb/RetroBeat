@@ -1,3 +1,8 @@
+<head>
+    <meta charset="UTF-8">
+    <title>Retrobeat</title>
+    <link rel="stylesheet" href="retrobeat.css">
+</head>
 <?php
     include_once "topo.php";
     include_once "menu.php";
