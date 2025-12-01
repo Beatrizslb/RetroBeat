@@ -1,3 +1,8 @@
+<head>
+    <meta charset="UTF-8">
+    <title>Retrobeat</title>
+    <link rel="stylesheet" href="retrobeat.css">
+</head>
 <section class="contato">
     <h1>Fale Conosco</h1>
 
