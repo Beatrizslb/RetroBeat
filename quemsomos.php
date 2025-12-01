@@ -1,3 +1,9 @@
+<head>
+    <meta charset="UTF-8">
+    <title>Retrobeat</title>
+    <link rel="stylesheet" href="retrobeat.css">
+</head>
+
 <section class="quem-somos">
     <h1>Quem Somos</h1>
 
