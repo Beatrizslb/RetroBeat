@@ -21,7 +21,39 @@ A página de administrador terá login de acesso restrito, permitindo que apenas
 | **JavaScript**   | Interatividade e dinamismo nas páginas                                    |
 
 ---
+## 🗄️ Banco de Dados
 
+Abaixo está o script utilizado para criar o banco de dados e suas tabelas.  
+Ele não inclui dados inseridos — apenas a estrutura necessária para o projeto funcionar.
+
+---
+
+### 📦 Script de Criação do Banco e Tabelas (SQL)
+
+```sql
+CREATE DATABASE retrobeat;
+USE retrobeat;
+
+-- Tabela de administradores
+CREATE TABLE admins (
+  id INT(11) NOT NULL AUTO_INCREMENT,
+  usuario VARCHAR(50) NOT NULL,
+  senha VARCHAR(255) NOT NULL,
+  PRIMARY KEY (id),
+  UNIQUE KEY usuario (usuario)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+-- Tabela de produtos
+CREATE TABLE produtos (
+  id INT(11) NOT NULL AUTO_INCREMENT,
+  nome VARCHAR(100) NOT NULL,
+  descricao TEXT DEFAULT NULL,
+  preco DECIMAL(10,2) NOT NULL,
+  categoria ENUM('MPB','Rock','Pop','Jazz') NOT NULL,
+  imagem VARCHAR(255) DEFAULT NULL,
+  PRIMARY KEY (id)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+---
 ## 🎓 Colaboradores
 
 * Ana Beatriz Linhares  
