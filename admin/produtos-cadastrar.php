@@ -45,7 +45,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 }
 ?>
 
-<!-- 🌟 CSS INTERNO AQUI -->
 <style>
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
 
@@ -136,7 +135,7 @@ body {
 }
 </style>
 
-<!-- 🌟 FORMULÁRIO -->
+
 <div class="formulario">
     <h2>Cadastrar Produto</h2>
 
