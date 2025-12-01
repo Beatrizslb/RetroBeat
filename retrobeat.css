@@ -1,0 +1,167 @@
+/* -------------------- RESET -------------------- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background: #faf4f4;
+    color: #8C6C48;
+}
+
+/* -------------------- MENU / HEADER -------------------- */
+
+header {
+    width: 100%;
+    background: #8C6C48;
+    color: white;
+    padding: 15px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    border-bottom: 2px solid ;
+}
+
+.logo {
+    font-size: 26px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+/* Botão mobile */
+.toggle {
+    font-size: 30px;
+    cursor: pointer;
+    display: none;
+}
+
+/* Menu desktop */
+.menu ul {
+    display: flex;
+    gap: 25px;
+    list-style: none;
+}
+
+.menu ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    transition: 0.3s;
+}
+
+.menu ul li a:hover {
+    color: #3b3023;
+    text-shadow: 0 0 5px #8C6C48;
+}
+
+/* -------------------- MENU MOBILE -------------------- */
+
+@media (max-width: 768px) {
+    .toggle {
+        display: block;
+    }
+
+    .menu {
+        display: none;
+        width: 100%;
+        background:#8C6C48 ;
+        position: absolute;
+        top: 65px;
+        left: 0;
+        padding: 15px 0;
+        border-top: 2px solid #F7EFE6;
+    }
+
+    .menu.ativo {
+        display: block;
+    }
+
+    .menu ul {
+        flex-direction: column;
+        gap: 15px;
+        text-align: center;
+    }
+}
+
+/* -------------------- ESPAÇAMENTO PADRÃO DAS PÁGINAS -------------------- */
+
+.page-container {
+    margin-top: 120px !important;
+    padding: 20px;
+    width: 100%;
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Aplica automaticamente para todas as sections das páginas */
+section {
+    margin-top: 120px;
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px;
+}
+
+/* -------------------- HOME / CONTEÚDO PRINCIPAL -------------------- */
+
+.sobre h1,
+.quem-somos h1,
+.contato h1 {
+    font-size: 32px;
+    margin-bottom: 15px;
+    color: #8C6C48;
+    text-align: center;
+}
+
+.sobre p,
+.quem-somos p,
+.contato p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+.sobre {
+    background: #F7EFE6;
+    padding: 25px;
+    border-radius: 10px;
+    border-left: 4px solid #8C6C48;
+}
+/* -------------------- QUEM SOMOS -------------------- */
+
+.quem-somos {
+    background: #F7EFE6;
+    padding: 25px;
+    border-radius: 10px;
+    border-left: 4px solid #8C6C48;
+}
+
+/* -------------------- FALE CONOSCO -------------------- */
+
+.contato {
+    background: #F7EFE6;
+    padding: 25px;
+    border-radius: 10px;
+    border-left: 4px solid #8C6C48;
+}
+
+.contato h3 {
+    margin-top: 20px;
+    font-size: 22px;
+    color: #8C6C48;
+}
+
+/* -------------------- FOOTER -------------------- */
+
+footer {
+    margin-top: 40px;
+    padding: 20px;
+    text-align: center;
+    color: #8C6C48;
+}
