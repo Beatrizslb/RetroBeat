@@ -1,5 +1,6 @@
 <?php
 require 'config.inc.php';
+include 'auth.php';
 
 if (!isset($_GET['id'])) {
     die("ID do produto não informado.");

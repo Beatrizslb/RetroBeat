@@ -1,5 +1,7 @@
 <?php
-require 'config.inc.php';
+require 'config.inc.php'; // inicia sessão
+include 'auth.php';       // verifica login
+
 
 // Total de produtos
 $sqlProdutos = "SELECT COUNT(*) AS total FROM produtos";
