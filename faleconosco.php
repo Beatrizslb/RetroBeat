@@ -1,12 +1,7 @@
-<head>
-    <meta charset="UTF-8">
-    <title>Retrobeat</title>
-    <link rel="stylesheet" href="retrobeat.css">
-</head>
 <section class="contato">
     <h1>Fale Conosco</h1>
 
-    <p>Entre em contato com a <strong>RetroVibe Discos</strong>. Será um prazer atender você!</p>
+    <p>Entre em contato com a <strong>RetroBeat Discos</strong>. Será um prazer atender você!</p>
 
     <h3>📞 Telefone</h3>
     <p>(83) 3456-7823</p>

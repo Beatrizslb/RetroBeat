@@ -1,12 +1,5 @@
-<head>
-    <meta charset="UTF-8">
-    <title>Retrobeat</title>
-    <link rel="stylesheet" href="retrobeat.css">
-</head>
-
-<section class="quem-somos">
+<section class="sobre">
     <h1>Quem Somos</h1>
-
     <p>
         A <strong>RetroVibe Discos</strong> é uma loja especializada em vinis retrô,
         fundada em 2025 na charmosa região de <strong>Manaíra, em João Pessoa – PB</strong>.

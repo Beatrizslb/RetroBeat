@@ -1,13 +1,5 @@
-<head>
-    <meta charset="UTF-8">
-    <title>Retrobeat</title>
-    <link rel="stylesheet" href="retrobeat.css">
-</head>
-
-<link rel="stylesheet" href="assets/css/global.css">
 <header>
-    
-    <div class="logo">Retrobit</div>
+    <div class="logo">RetroBeat</div>
 
     <div class="toggle">☰</div>
 
