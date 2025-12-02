@@ -1,12 +1,6 @@
 <?php
 include 'auth.php'; 
 ?>
-<!doctype html>
-<html lang="pt-br">
-<head>
-<meta charset="utf-8">
-<title>Painel Administrativo</title>
-
 <style>
     /* Cor de fundo geral */
     body {
