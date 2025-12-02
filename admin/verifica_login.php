@@ -1,5 +1,4 @@
 <?php
-session_start();
 include 'config.inc.php';
 
 $usuario = $_POST['usuario'] ?? '';

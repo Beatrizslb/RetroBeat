@@ -1,5 +1,6 @@
 <?php
 require 'config.inc.php';
+include 'auth.php';
 ?>
 
 <style>
