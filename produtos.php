@@ -12,21 +12,29 @@ foreach($categorias as $cat){
 
     if(mysqli_num_rows($resultado) > 0){
         while($produto = mysqli_fetch_assoc($resultado)){
-            echo "<div class='produto-card'>";
-            echo "<div class='produto-imagem'>";
-            if(!empty($produto['imagem'])){
-                echo "<img src='admin/{$produto['imagem']}' alt='".htmlspecialchars($produto['nome'])."'>";
-            } else {
-                echo "<img src='admin/uploads/produtos/sem-imagem.png' alt='Sem imagem'>";
-            }
+            $id = $produto['id'];
+            $nome = htmlspecialchars($produto['nome']);
+            $descricao = htmlspecialchars($produto['descricao']);
+            $preco = "R$ ".number_format($produto['preco'], 2, ',', '.');
+            $imagem = !empty($produto['imagem']) ? "admin/{$produto['imagem']}" : "admin/uploads/produtos/sem-imagem.png";
 
-            echo "</div>";
+            echo "<div class='produto-card' onclick='abrirModal($id)'>";
+            echo "<div class='produto-imagem'><img src='$imagem' alt='$nome'></div>";
             echo "<div class='produto-info'>";
-            echo "<h3>".htmlspecialchars($produto['nome'])."</h3>";
-            echo "<p>".htmlspecialchars($produto['descricao'])."</p>";
-            echo "<span class='produto-preco'>R$ ".number_format($produto['preco'], 2, ',', '.')."</span>";
+            echo "<h3>$nome</h3>";
+            echo "<p>$descricao</p>";
+            echo "<span class='produto-preco'>$preco</span>";
             echo "</div>";
             echo "</div>";
+
+            echo "<div id='modal-$id' class='modal'>
+                    <div class='modal-content'>
+                        <span class='close-modal' onclick='fecharModal($id)'>&times;</span>
+                        <h3>$nome</h3>
+                        <p>$descricao</p>
+                        <span class='produto-preco'>$preco</span>
+                    </div>
+                  </div>";
         }
     } else {
         echo "<p class='nenhum-produto'>Nenhum produto nesta categoria.</p>";
@@ -35,3 +43,22 @@ foreach($categorias as $cat){
     echo "</div>";
 }
 ?>
+
+<script>
+function abrirModal(id) {
+    document.getElementById("modal-" + id).style.display = "block";
+}
+
+function fecharModal(id) {
+    document.getElementById("modal-" + id).style.display = "none";
+}
+
+window.onclick = function(event) {
+    const modals = document.querySelectorAll('.modal');
+    modals.forEach(modal => {
+        if(event.target == modal) {
+            modal.style.display = "none";
+        }
+    });
+}
+</script>

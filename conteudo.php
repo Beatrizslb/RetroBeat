@@ -1,11 +1,5 @@
-<head>
-    <meta charset="UTF-8">
-    <title>Retrobeat</title>
-    <link rel="stylesheet" href="retrobeat.css">
-</head>
-
 <section class="sobre">
-    <h1>Bem-vindo à RetroVibe Discos</h1>
+    <h1>Bem-vindo à RetroBeat Discos</h1>
     <p>
         A <strong>RetroVibe Discos</strong> nasceu com a paixão de manter viva a magia dos discos de vinil.
         Aqui você encontra clássicos que marcaram gerações, edições raras e relançamentos especiais,
