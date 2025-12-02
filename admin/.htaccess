@@ -1,0 +1,5 @@
+# Impede listagem de diretório
+Options -Indexes
+
+# Redireciona quem acessa a pasta sem arquivo específico
+DirectoryIndex login.php
