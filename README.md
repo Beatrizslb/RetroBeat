@@ -31,28 +31,39 @@ Ele não inclui dados inseridos — apenas a estrutura necessária para o projet
 ### 📦 Script de Criação do Banco e Tabelas (SQL)
 
 ```sql
-CREATE DATABASE retrobeat;
-USE retrobeat;
+-- Banco de dados: `retrobeat` (resumido)
 
--- Tabela de administradores
-CREATE TABLE admins (
-  id INT(11) NOT NULL AUTO_INCREMENT,
-  usuario VARCHAR(50) NOT NULL,
-  senha VARCHAR(255) NOT NULL,
-  PRIMARY KEY (id),
-  UNIQUE KEY usuario (usuario)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+-- Tabela `admins`
+CREATE TABLE `admins` (
+  `id` int NOT NULL AUTO_INCREMENT,
+  `usuario` varchar(50) NOT NULL,
+  `senha` varchar(255) NOT NULL,
+  PRIMARY KEY (`id`),
+  UNIQUE KEY `usuario` (`usuario`)
+);
 
--- Tabela de produtos
-CREATE TABLE produtos (
-  id INT(11) NOT NULL AUTO_INCREMENT,
-  nome VARCHAR(100) NOT NULL,
-  descricao TEXT DEFAULT NULL,
-  preco DECIMAL(10,2) NOT NULL,
-  categoria ENUM('MPB','Rock','Pop','Jazz') NOT NULL,
-  imagem VARCHAR(255) DEFAULT NULL,
-  PRIMARY KEY (id)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+-- Dados principais
+INSERT INTO `admins` (`usuario`, `senha`) VALUES
+('admin', '$2y$10$WYpYvia8vj40AKfOHC4ULOw2J/2B25X4wNVV1rAbT7h7kcp/ndWtK');
+
+-- Tabela `produtos`
+CREATE TABLE `produtos` (
+  `id` int NOT NULL AUTO_INCREMENT,
+  `nome` varchar(100) NOT NULL,
+  `descricao` text,
+  `preco` decimal(10,2) NOT NULL,
+  `categoria` enum('MPB','Rock','Pop','Jazz') NOT NULL,
+  `imagem` varchar(255),
+  PRIMARY KEY (`id`)
+);
+
+-- Alguns produtos de exemplo
+INSERT INTO `produtos` (`nome`, `descricao`, `preco`, `categoria`, `imagem`) VALUES
+('The Tortured Poets Departament', 'Um disco de vinil', 200.00, 'Pop', 'uploads/produtos/produto_692dbba7c92027.65252316.jpg'),
+('Elis Regina – Elis (1972)', 'A intensidade vocal de Elis no auge.', 149.90, 'MPB', 'uploads/produtos/produto_692e4a41da5d24.31159878.jpg'),
+('Pink Floyd – The Dark Side of the Moon (1973)', 'Experiência sonora imersiva e atemporal.', 199.90, 'Rock', 'uploads/produtos/produto_692e50ee27a745.52961720.jpg'),
+('Dua Lipa – Future Nostalgia (2020)', 'Pop dançante com estética retrô e hits marcantes.', 199.90, 'Pop', 'uploads/produtos/produto_692e53544e9e83.43477080.png'),
+('Taylor Swift - 1989', 'Pop moderno, brilhante e cheio de melodias cativantes.', 289.90, 'Pop', 'uploads/produtos/produto_692e537963ce08.85517824.jpg');
 ---
 ## 🎓 Colaboradores
 
