@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    background: #faf4f4;
+    color: #8C6C48;
+    padding-top: 95px;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    height: 95px;
+    width: 100%;
+    background: #8C6C48;
+    color: white;
+    padding: 0 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    border-bottom: 2px solid #3b3023;
+}
+
+.logo {
+    font-size: 26px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.toggle {
+    font-size: 30px;
+    cursor: pointer;
+    display: none;
+}
+
+.menu ul {
+    display: flex;
+    gap: 25px;
+    list-style: none;
+}
+
+.menu ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    transition: 0.3s;
+}
+
+.menu ul li a:hover {
+    color: #3b3023;
+}
+
+.sobre {
+    max-width: 800px;
+    margin: 40px auto;
+    background: #ffffff;
+    padding: 35px;
+    border-radius: 14px;
+    box-shadow: 0 0 12px rgba(0,0,0,0.08);
+    text-align: center;
+    color: #8C6C48;
+}
+
+.sobre h1 {
+    font-size: 30px;
+    margin-bottom: 20px;
+    color: #8C6C48;
+}
+
+.sobre p {
+    font-size: 17px;
+    text-align: justify;
+    line-height: 1.7;
+    margin-bottom: 18px;
+    color: #6a5238;
+}
+
+.contato {
+    max-width: 800px;
+    margin: 40px auto;
+    background: #ffffff;
+    padding: 35px;
+    border-radius: 14px;
+    box-shadow: 0 0 12px rgba(0,0,0,0.08);
+    text-align: center;
+    color: #8C6C48;
+}
+
+.contato h1 {
+    font-size: 30px;
+    margin-bottom: 20px;
+    color: #8C6C48;
+}
+
+.contato h3 {
+    font-size: 20px;
+    margin-top: 20px;
+    margin-bottom: 5px;
+    color: #8C6C48;
+}
+
+.contato p {
+    font-size: 17px;
+    line-height: 1.7;
+    margin-bottom: 12px;
+    color: #6a5238;
+}
+
+@media (max-width: 768px) {
+    .toggle {
+        display: block;
+    }
+
+    .menu {
+        display: none;
+        width: 100%;
+        background: #8C6C48;
+        position: absolute;
+        top: 95px;
+        left: 0;
+        padding: 20px 0;
+    }
+
+    .menu.ativo {
+        display: block;
+    }
+
+    .menu ul {
+        flex-direction: column;
+        text-align: center;
+        gap: 18px;
+    }
+}
+
+.page-container {
+    width: 100%;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 25px 40px;
+    flex: 1;
+}
+
+footer {
+    background: #8C6C48;
+    color: white;
+    padding: 25px;
+    text-align: center;
+    font-size: 16px;
+    margin-top: auto;
+}
